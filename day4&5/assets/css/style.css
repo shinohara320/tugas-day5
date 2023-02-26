@@ -1,0 +1,164 @@
+html, body{
+    font-family: 'Poppins', sans-serif;
+    background-color:  #e3e7eb;
+    height: 780px;
+    width: 1368px;
+    margin: 0;
+    padding: 0;
+}
+/* index */
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+    margin: 100px 20vh 200px 20vh; 
+    padding: 3% 5% 3% 5%; 
+    border-radius: 10px ; 
+    background-color: #fff; 
+    text-align: center; 
+    box-shadow: 0px 5px 20px -15px #000;
+}
+.article-container{
+    margin-right: 20px;
+}
+.text{
+    text-align: justify;
+}
+.text h1{
+    font-weight: bold; 
+    margin: 5px 0 5px 0;
+    margin-bottom: 20px;
+}
+.text p{
+    margin-bottom: 20px;
+}
+.contactBtn{
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    height: 10px;
+    width: 10%;
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;
+    margin-right: 30px;
+}
+#cv-dl{
+    font-size: 20px;
+    margin-top: 5px; 
+    color: #000;
+}
+#cv-dl a{
+    margin: 0 auto;
+}
+.socmedBtn{
+    margin-top: 50px;
+    display: flex;
+    justify-content:last baseline;
+    font-size: 20px; 
+    border-radius: 100%;
+}
+.socmedBtn #in, #fb, #ig, #tw{
+    color: #000; 
+    text-decoration: none;
+}
+.pic{
+    display: flex;
+    flex-direction: column;
+    background: #f8f5f5 ;
+    height: 400px;
+    width: 780px; 
+    border-radius: 10px; 
+    margin: 0 0 0 20px;
+    box-shadow: 0 4px 20px -7px gray;
+}
+.pic img{
+    height: 80%;width: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+.pic h3,p{
+    margin: 0;
+}
+/* index end */
+/* contactform */
+/* navbar */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f4f3f3;
+    font-size: 14px;
+    height: 67px;
+}
+.nav-left{
+    display: flex;
+    justify-content: flex-start;
+}
+.nav-left ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+.nav-left a{
+    color: black;
+    text-decoration: none;
+}
+.nav-left ul li{
+    margin-right: 25px;
+    font-size: 20px;
+}
+.nav-right{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-right a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    background-color: #000;
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin-right: 16px;
+}
+/* navbar end */
+form{
+    width: 350px;
+    margin: 50px auto;
+    padding: 10px;
+}
+form div{
+    margin-top: 10px;
+}
+form div label{
+    font-weight: bold;
+    font-size: 20px;
+}
+input, select, textarea{
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px -7px gray
+}
+#subject{
+    width: 372px;
+}
+textarea{
+    resize: none;
+}
+
+button{
+    color: white;
+    background-color: #000;
+    padding: 10px 20px;
+    margin-top: 5px;
+    font-size: 15px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/* contact form */
