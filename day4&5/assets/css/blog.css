@@ -1,4 +1,4 @@
-  /* Blog Form */
+  /* Form */
   .form {
     padding: 50px 0;
     display: flex;
@@ -34,7 +34,7 @@ form input,
     border-radius: 8px;
   }
 #input-start, #input-end{
-    color: transparent;
+    opacity: 50%;
 }
 .date{
     display: flex;
