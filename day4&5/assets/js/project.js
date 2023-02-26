@@ -79,6 +79,6 @@ function days(dateOne,dateTwo){
   const dateStart = new Date(dateOne);
   const dateEnd = new Date(dateTwo);
   const diffTime = Math.abs(dateEnd - dateStart);
-  const diffDays = Math.ceil(diffTime/ (1000 * 60 * 60 * 24));
+  const diffDays = Math.ceil((diffTime +86400000)/ (1000 * 60 * 60 * 24));
   return diffDays;
 }
