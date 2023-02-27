@@ -1,16 +1,4 @@
 let datas = [];
-// const form = document.querySelector('form');
-// let tech=[];
-// form.addEventListener('submit',(e)=>{
-//   e.preventDefault();
-  
-//   document.querySelectorAll('[type="checkbox"]').forEach(item => {
-//     if(item.checked===true){
-//       tech.push(item.value)
-//     }
-//   })
-// });
-
 function getData(event) {
     event.preventDefault();
     
@@ -19,10 +7,10 @@ function getData(event) {
     let image = document.getElementById('input-image').files;
     let start = document.getElementById('input-start').value;
     let end = document.getElementById('input-end').value;
-    let nodejs = document.getElementById("node-js").checked == true ? `<img id="nodejs" src="./assets/images/icons/nodejs.png" style="width:5%; margin-right: 10px;">`: "";
-    let nextjs = document.getElementById("next-js").checked == true ? `<img id="nextjs" src="./assets/images/icons/nextjs.png"style="width:5%;margin-right: 10px;">` : "";
-    let reactjs = document.getElementById("react-js").checked == true ? `<img id="reactjs" src="./assets/images/icons/reactjs.png"style="width:5%;margin-right: 10px;">` : "";
-    let typerscript = document.getElementById("typescript").checked == true ? `<img id="typescript" src="./assets/images/icons/typescript.png" style="width:5%;margin-right: 10px;>"` : "";
+    let nodejs = document.getElementById("node-js").checked == true ? `<img id="nodejs" src="./assets/images/icons/nodejs.png" style="width:15%; margin-right: 10px;">`: "";
+    let nextjs = document.getElementById("next-js").checked == true ? `<img id="nextjs" src="./assets/images/icons/nextjs.png"style="width:15%;margin-right: 10px;">` : "";
+    let reactjs = document.getElementById("react-js").checked == true ? `<img id="reactjs" src="./assets/images/icons/reactjs.png"style="width:15%;margin-right: 10px;">` : "";
+    let typerscript = document.getElementById("typescript").checked == true ? `<img id="typescript" src="./assets/images/icons/typescript.png" style="width:15%;margin-right: 10px;>"` : "";
     
     image  = URL.createObjectURL(image[0]);
     let data = {
@@ -54,13 +42,13 @@ function getData(event) {
             </div>
             <div class="card-content">
               <p>
-              ${descLength(datas[i].description,250)}
+              ${descLength(datas[i].description,200)}
               </p>
               <div style="display:flex; flex-direction:row;">
               ${datas[i].nodejs} ${datas[i].nextjs} ${datas[i].reactjs} ${datas[i].typerscript}
               </div>
             </div>
-            <div class="btn-group">
+            <div class="button">
               <button class="btn-edit">Edit Post</button>
               <button class="btn-post">Post Blog</button>
             </div>

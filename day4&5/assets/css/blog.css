@@ -167,3 +167,44 @@ h1 a{
   margin: 5px 0 0 5px;
   width: 200px;
 }
+.container{
+  width: 20%;
+  height: 70vh;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 30px 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.image img{
+  width: 270px;
+
+}
+.detail{
+
+}
+.upper h1{
+
+}
+.detail h1 a{
+
+}
+.upper h3{
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0;
+  font-weight: 300;
+
+}
+.detail p{
+
+}
+.icons{
+}
+.button button{
+  width: 130px;
+  border-radius: 10px;
+}
